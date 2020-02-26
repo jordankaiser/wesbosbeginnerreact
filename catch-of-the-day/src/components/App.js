@@ -9,7 +9,11 @@ class App extends React.Component {
     order: {},
   }
   addFish = (fish) => {
-    console.log('adding a fish')
+    const fishes = {...this.state.fishes}
+    fishes[`fish${Date.now()}`] = fish
+    this.setState({
+      fishes: fishes
+    })
   }
   render() {
     return (
