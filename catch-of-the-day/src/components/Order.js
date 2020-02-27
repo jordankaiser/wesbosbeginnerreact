@@ -9,14 +9,13 @@ class Order extends React.Component {
     if (isAvailable === false) {
       return (
         <li key={key}>
-          Sorry {fish ? fish.name : 'fish'} is no longer available
+          Sorry, {fish ? fish.name : 'fish'} is no longer available
         </li>
       )
     }
     return (
       <li key={key}>
-        {count} lbs {fish.name} 
-        {formatPrice(count * fish.price)}
+        {count} lbs {fish.name} {formatPrice(count * fish.price)}
       </li>
     )
   }
