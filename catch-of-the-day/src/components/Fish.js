@@ -2,9 +2,6 @@ import React from 'react'
 import { formatPrice } from '../helpers'
 
 class Fish extends React.Component {
-  // createOrder = () => {
-  //   this.props.addToOrder(this.props.index)
-  // }
   render() {
     const image = this.props.details.image
     const name = this.props.details.name
